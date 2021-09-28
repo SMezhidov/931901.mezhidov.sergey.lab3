@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+header {
+  height: 50px;
+  width: 100%;
+  background-color: green;
+  text-align: center;
+  display:table;
+}
+
+header h1 {
+  color: white;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-weight: 400;
+  vertical-align: middle;
+  display:table-cell;
+}
+
+.footer {
+  height: 30px;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  display:table;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.footer h1 {
+  color: white;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  vertical-align: middle;
+  display:table-cell;
+}
+
+.content {
+  width: 800px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+}
+
+.content .menu {
+  width: 200px;
+  float: left;
+  background-color: red;
+  height: calc(100vh - 50px - 30px);
+
+}
+
+.content .menu ul {
+  padding-top: 11px;
+}
+
+.content .menu li {
+  list-style-type: none;
+  padding-left: 50px;
+  padding-top: 20px;
+  width: 120px;
+}
+
+.content .text {
+  width: 600px;
+  margin-left: 200px;
+  background-color: white;
+}
+
+.content .menu a {
+    color: #fff;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.content .menu a:hover {
+  background: green;
+}
+
+
+.content .text p {
+  padding: 30px;
+  text-align: justify;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 17px;
+}
+
+.content .text p:first-letter {
+  color: red;
+}
+
+.content .text p::selection {
+  background: green;
+  color: white;
+}
+
+
+
+@media (max-width: 800px) {
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .content .text {
+    width: calc(100% - 200px);
+  }
+  
+}
